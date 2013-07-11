@@ -1,5 +1,7 @@
 <?php
 
+Yii::import('ext.feedback.models.FeedbackForm');
+
 /**
  * @author Gareth Bond dev@gazbond.co.uk
  * @copyright Copyright &copy; Gareth Bond 2013
