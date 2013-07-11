@@ -27,25 +27,25 @@
 			'class' => !$isPostBack ? 'hide' : ''
 		)
 	)); ?>
-	<div class="feedback-row">
-		<?php echo $form->labelEx($feedbackForm, 'topic'); ?>
-		<?php echo $form->dropDownList($feedbackForm, 'topic', $topicOptions); ?>
-		<?php echo $form->error($feedbackForm, 'topic'); ?>
-	</div>
-	<div class="feedback-row email">
-		<?php echo $form->labelEx($feedbackForm, 'email'); ?>
-		<?php echo $form->textField($feedbackForm, 'email'); ?>
-		<?php echo $form->error($feedbackForm, 'email'); ?>
-	</div>
-	<div class="feedback-row message">
-		<?php echo $form->labelEx($feedbackForm, 'message'); ?>
-		<?php echo $form->textArea($feedbackForm, 'message'); ?>
-		<?php echo $form->error($feedbackForm, 'message'); ?>
-	</div>
-	<div class="feedback-row submit">
-		<?php echo CHtml::submitButton('Submit', array(
-			'name' => CHtml::activeName($feedbackForm, 'submit')
-		)); ?>
-	</div>
-<?php $this->endWidget(); ?>
+		<div class="feedback-row">
+			<?php echo $form->labelEx($feedbackForm, 'topic'); ?>
+			<?php echo $form->dropDownList($feedbackForm, 'topic', $topicOptions); ?>
+			<?php echo $form->error($feedbackForm, 'topic'); ?>
+		</div>
+		<div class="feedback-row email">
+			<?php echo $form->labelEx($feedbackForm, 'email'); ?>
+			<?php echo $form->textField($feedbackForm, 'email'); ?>
+			<?php echo $form->error($feedbackForm, 'email'); ?>
+		</div>
+		<div class="feedback-row message">
+			<?php echo $form->labelEx($feedbackForm, 'message'); ?>
+			<?php echo $form->textArea($feedbackForm, 'message'); ?>
+			<?php echo $form->error($feedbackForm, 'message'); ?>
+		</div>
+		<div class="feedback-row submit">
+			<?php echo CHtml::submitButton('Submit', array(
+				'name' => CHtml::activeName($feedbackForm, 'submit')
+			)); ?>
+		</div>
+	<?php $this->endWidget(); ?>
 </div>
