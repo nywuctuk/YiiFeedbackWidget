@@ -10,8 +10,19 @@ Yii::import('ext.feedback.models.FeedbackForm');
  */
 class FeedbackWidget extends CWidget
 {
+	/**
+	 * @var array topic dropdown options
+	 */
 	public $topicOptions = null;
+
+	/**
+	 * @var string to email address
+	 */
 	public $toEmail = null;
+
+	/**
+	 * @var string position to show widget 'left' / 'right'
+	 */
 	public $position = 'left';
 
 	public function init()
